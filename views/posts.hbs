@@ -1,0 +1,14 @@
+<hr>
+<a href="/"> home </a>
+
+<h1> All posts on weather type selected</h1>
+
+{{#each posts}}
+<div>
+  {{name}} <br>
+  {{location}}<br>
+  {{text}} <br>
+  <a href="/post-comment/{{id}}">View and add a comment to this post</a>
+  <hr>
+</div>
+{{/each}}
