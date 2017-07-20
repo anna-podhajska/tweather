@@ -23,6 +23,16 @@ router.get("/", function (req, res) {
 
 })
 
+//ania - added a route to view single post and comment on it:
+router.get("/comment", function (req, res) {
+  var db = req.app.get('connection')
+  db('posts')
+  .then(function (posts) {
+    res.render("post-comment", {posts: posts})
+  })
+
+})
+
 router.get("/post/:id", function(req, res) {
   var db = req.app.get('connection')
   db("posts").where("weather_id", req.params.id)
@@ -31,5 +41,9 @@ router.get("/post/:id", function(req, res) {
     res.render("posts", {posts: posts})
   })
 })
+
+
+
+
 
 module.exports = router
