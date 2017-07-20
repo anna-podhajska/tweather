@@ -15,10 +15,7 @@ var db = require('../db')
 
 
 router.get("/", function (req, res) {
-  res.send("hello")
-
+  res.render('home')
 })
-
-
 
 module.exports = router
