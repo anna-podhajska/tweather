@@ -1,18 +1,25 @@
-<h3> One single post & option to add a comment</h3>
+<hr>
 
-<h4> I am a one single weather post </h4>
+<h4> Post on weather from {{name}} </h4>
+  <p>
+    {{name}} <br> {{location}} <br> {{text}}
+  </p>
 
-<p>
-  {{text}} <br> {{name}} <br> {{location}}
-</p>
+<h4> Comments to the post: </h4>
+  <p>
+    {{#each comments}}
+      title:  {{title}}  <br>
+      description: {{description}}
+    {{/each}}
+  </p>
 
-<p>
-  {{#each comments}}
-    {{title}}  <br>
-    {{description}}
-  {{/each}}
-</p>
+<hr>
 
-<h6> below will be a form with comment option</h6>
-<form>
-</form>
+<h6> Add a new comment:</h6>
+  <form action="/post/comment{{id}}" method="post">
+    <input type="text" name="title" value="">
+    <input type="text" name="title" value="">
+    <input type="submit" name="submit" value="submit!">
+
+
+  </form>
