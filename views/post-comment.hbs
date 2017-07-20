@@ -1,6 +1,17 @@
-<h1> One single post on weather with option to add a comment</h1>
+<h3> One single post & option to add a comment</h3>
 
-<p> I am a one single weather post </p>
+<h4> I am a one single weather post </h4>
+
+<p>
+  {{text}} <br> {{name}} <br> {{location}}
+</p>
+
+<p>
+  {{#each comments}}
+    {{title}}  <br>
+    {{description}}
+  {{/each}}
+</p>
 
 <h6> below will be a form with comment option</h6>
 <form>
