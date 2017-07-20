@@ -1,27 +1,28 @@
 <hr>
+<a href="/"> home </a>
 
-<h4> Post on weather from {{name}} </h4>
+<h4>Post on weather from {{name}}</h4>
   <p>
     {{name}} <br> {{location}} <br> {{text}}
   </p>
 
-<h4> Comments to the post: </h4>
-  <p>
+<h4>Comments to the post:</h4>
+  <div>
     {{#each comments}}
-      title:  {{title}}  <br>
-      description: {{description}}
+      title:  {{title}}<br>
+      description: {{description}}<br>
     {{/each}}
-  </p>
+  </div>
 <hr>
 
 <h3> Add a new comment:</h3>
   <form action="/post-comment/{{id}}" method="post">
-    title: <br>
-    <input type="text" name="title" value="" class="inputTitle"/> <br>
-    text:  <br>
-    <input type="text" name="description" value="" class="inputText"/> <br>
-    <input type="hidden" name="post_id" value="{{id}}"/>
-    <input type="submit" value="submit!">
+    title:<br>
+    <input type="text" name="title" value="" autofocus="on" class="inputTitle"/><br>
+    text:<br>
+    <input type="text" name="description" value="" class="inputText"/><br>
+    <input type="hidden" name="post_id" value="{{id}}"/> <!--we need to pass the id -->
+    <input type="submit" value="Add the comment!" class="inputSubmit">
   </form>
 
 
@@ -29,10 +30,15 @@
 <style>
 .inputTitle {
   height: 2rem;
-  width: 400px;
+  width: 600px;
+  font-size: 1rem;
 }
 .inputText {
   height: 3rem;
-  width: 400px;
+  width: 600px;
+  font-size: 1rem;
+}
+.inputSubmit {
+  font-size:1rem;
 }
 </style>
