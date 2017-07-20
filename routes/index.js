@@ -30,7 +30,6 @@ router.get("/comment", function (req, res) {
   .then(function (posts) {
     res.render("post-comment", {posts: posts})
   })
-
 })
 
 router.get("/post/:id", function(req, res) {
