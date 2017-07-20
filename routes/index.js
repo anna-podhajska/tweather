@@ -36,6 +36,17 @@ router.get("/post-comment/:id", function (req, res) {
       })
   })
 })
+router.post("/post-comment/:id", function (req, res) {
+    var db = req.app.get('connection')
+    var newComment = req.body
+    db("comments").insert(newComment)
+    .then(function(newCommId) {
+      var id = req.params.id
+      res.redirect("/post-comment/"+id)
+    })
+
+})
+
 
 router.get("/post/:id", function(req, res) {
   var db = req.app.get('connection')

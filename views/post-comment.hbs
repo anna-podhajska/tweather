@@ -15,12 +15,13 @@
 <hr>
 
 <h3> Add a new comment:</h3>
-  <form action="/post/comment/{{id}}" method="post">
+  <form action="/post-comment/{{id}}" method="post">
     title: <br>
-    <input type="text" name="title" value="" class="inputTitle"> <br>
+    <input type="text" name="title" value="" class="inputTitle"/> <br>
     text:  <br>
-    <input type="text" name="title" value="" class="inputText"> <br>
-    <input type="submit" name="submit" value="submit!">
+    <input type="text" name="description" value="" class="inputText"/> <br>
+    <input type="hidden" name="post_id" value="{{id}}"/>
+    <input type="submit" value="submit!">
   </form>
 
 
