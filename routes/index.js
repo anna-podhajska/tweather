@@ -15,7 +15,12 @@ var db = require('../db')
 
 
 router.get("/", function (req, res) {
-  res.render('home')
+  var db = req.app.get('connection')
+  db('weather')
+  .then(function (weather) {
+    res.render("home", {weather: weather})
+  })
+
 })
 
 module.exports = router
