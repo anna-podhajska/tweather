@@ -6,6 +6,7 @@ var db = require('../db')
 router.get('/', function (req, res) {
   db.getUsers(req.app.get('connection'))
     .then(function (users) {
+      res.send("Hello World")
       res.render('index', { users: users })
     })
     .catch(function (err) {
