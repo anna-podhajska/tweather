@@ -23,4 +23,13 @@ router.get("/", function (req, res) {
 
 })
 
+router.get("/post/:id", function(req, res) {
+  var db = req.app.get('connection')
+  db("posts").where("weather_id", req.params.id)
+  .then(function(posts) {
+    // console.log(posts[1]);
+    res.render("posts", {posts: posts})
+  })
+})
+
 module.exports = router
