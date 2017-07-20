@@ -5,7 +5,8 @@ exports.up = function(knex, Promise) {
     table.integer('weather_id');
     table.string('text');
     table.string('name');
-    table.string('location')
+    table.string('location');
+    table.string('date')
   })
 };
 
