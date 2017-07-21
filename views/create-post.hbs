@@ -1,17 +1,27 @@
 <div>
 
-<form method="post" action="add-post">
-<select name="weather_id">
-{{#each weather}}
-<option value="{{id}}"> {{weather}} </option>
-{{/each}}
-</select> </br>
-Text: <input type="text" name="text" /></br>
-Name: <input type="text" name="name" /></br>
-Location: <input type="text" name="location" /></br>
-Date: <input type="date" name="date" /></br>
-<input type="submit" /></br>
 
-</form>
 
+</div>
+
+<div class="cont">
+  <div class="row">
+       <div class="col s12 m4 l3"></div>
+       <div class="col s12 m4 l6 center-align">
+         <form class="formStyle" method="post" action="add-post">
+         <select name="weather_id">
+         {{#each weather}}
+         <option value="{{id}}"> {{weather}} </option>
+         {{/each}}
+         </select> </br>
+         Text: <input type="text" name="text" /></br>
+         Name: <input type="text" name="name" /></br>
+         Location: <input type="text" name="location" /></br>
+         Date: <input type="date" name="date" /></br>
+         <input type="submit" /></br>
+
+         </form>
+       </div>
+       <div class="col s12 m4 l3"> </div>
+  </div>
 </div>

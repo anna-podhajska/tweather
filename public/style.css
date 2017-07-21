@@ -16,11 +16,31 @@
   height: 50px;
   text-align: center;
   background-color: #33ccff;
-  opacity:0.5;
+  /*opacity:0.5;*/
 }
 .align {
   text-align: center;
   width: 100%;
   font-size: 24px;
   color: white;
+}
+
+.cont {
+  background-image: url("http://images.fondecranhd.net/sky/paneyspxr55.jpg");
+  height:100%;
+  background-position: -42px -600px;
+}
+
+.app {
+  height:1000px
+}
+
+.posts {
+  background-color: #33ccff;
+  color: white;
+  margin:15px;
+}
+
+.formStyle {
+  color:white;
 }
