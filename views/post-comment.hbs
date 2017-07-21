@@ -1,42 +1,31 @@
-<hr>
-<a href="/"> home </a>
-
-<h4>Post on weather from {{name}}</h4>
-  <p> {{date}} <br> {{name}} <br> {{location}} <br> {{text}} <br> </p>
-
-<h4>Comments to the post:</h4>
-  <div>
-    {{#each comments}}
-      title:  {{title}}<br>
-      description: {{description}}<br>
-    {{/each}}
+<div class="row contPosts">
+  <div class="col s12 m4 l2"></div>
+  <div class="col s12 m4 l8 center-align ">
+    <h4>Post on weather from {{name}}</h4>
+      <p> Date: {{date}} <br> Name: {{name}} <br> Location: {{location}} <br> Description: {{text}} <br> </p>
   </div>
-<hr>
+  <div class="col s12 m4 l2"> </div>
+</div>
 
-<h3> Add a new comment:</h3>
-  <form action="/post-comment/{{id}}" method="post">
-    title:<br>
-    <input type="text" name="title" value="" autofocus="on" class="inputTitle"/><br>
-    text:<br>
-    <input type="text" name="description" value="" class="inputText"/><br>
-    <input type="hidden" name="post_id" value="{{id}}"/> <!--we need to pass the id -->
-    <input type="submit" value="Add the comment!" class="inputSubmit">
-  </form>
-
-
-<!-- Temporary style just to view the form on page: -->
-<style>
-.inputTitle {
-  height: 2rem;
-  width: 600px;
-  font-size: 1rem;
-}
-.inputText {
-  height: 3rem;
-  width: 600px;
-  font-size: 1rem;
-}
-.inputSubmit {
-  font-size:1rem;
-}
-</style>
+<div class="row contPosts">
+  <div class="col s12 m4 l5">
+    <h4> Add a new comment:</h4>
+      <form action="/post-comment/{{id}}" method="post">
+        title:<br>
+        <input type="text" name="title" value="" autofocus="on" class="inputTitle"/><br>
+        text:<br>
+        <input type="text" name="description" value="" class="inputText"/><br>
+        <input type="hidden" name="post_id" value="{{id}}"/> <!--we need to pass the id -->
+        <input type="submit" value="Add the comment!" class="inputSubmit">
+      </form>
+  </div>
+  <div class="col s12 m4 l7">
+    <h4>Comments to the post:</h4>
+      <div>
+        {{#each comments}}
+          title:  {{title}}<br>
+          description: {{description}}<br>
+        {{/each}}
+      </div>
+  </div>
+</div>

@@ -1,15 +1,17 @@
-<hr>
-<a href="/"> home </a>
 
-<h1> All posts on weather type selected</h1>
-<a href="/add-post"> Add Post </a>
-{{#each posts}}
-<div>
-  {{date}} <br>
-  {{name}} <br>
-  {{location}}<br>
-  {{text}} <br>
-  <a href="/post-comment/{{id}}">View and add a comment to this post</a>
-  <hr>
+<div class="row contPosts">
+  <div class="col s12 m4 l2"></div>
+  <div class="col s12 m4 l8 center-align ">
+    <h1 class="center-aligned">All Posts</h1>
+    {{#each posts}}
+    <div class="posts">
+      Date: {{date}} <br>
+      Name: {{name}} <br>
+      Location: {{location}}<br>
+      Description: {{text}} <br>
+      <a href="/post-comment/{{id}}">View and add a comment to this post</a>
+    </div>
+    {{/each}}
+  </div>
+  <div class="col s12 m4 l2"> </div>
 </div>
-{{/each}}
