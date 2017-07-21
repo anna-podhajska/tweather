@@ -27,6 +27,7 @@
 
 .cont {
   background-image: url("http://images.fondecranhd.net/sky/paneyspxr55.jpg");
+  background-repeat: none;
   height:100%;
   background-position: -42px -600px;
 }
@@ -43,4 +44,17 @@
 
 .formStyle {
   color:white;
+}
+
+#homeTopBar {
+  margin-top: 40px;
+
+}
+.postsButton {
+  background-color:#EE6E73;
+  margin: 3px;
+}
+
+.submitbtn {
+  color:black;
 }
