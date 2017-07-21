@@ -1,0 +1,26 @@
+.navLogo {
+  margin:5px;
+  padding-left:10px;
+  height: 90px;
+}
+.navEdit {
+  height:100px!important;
+}
+
+.navButton {
+  background-color: #33ccff!important;
+}
+
+.homeButton {
+  margin-top: 20px;
+  height: 50px;
+  text-align: center;
+  background-color: #33ccff;
+  opacity:0.5;
+}
+.align {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  color: white;
+}

@@ -5,11 +5,19 @@
     <title>Tweather</title>
     <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
   </head>
   <body>
+    <nav class="navEdit">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="/images/logo.png" alt="logo" class="navLogo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="" class="waves-effect waves-light btn navButton">Create Post</a></li>
+      </ul>
+    </div>
+  </nav>
     <div class="app">
-      <h1 class="title">Tweather</h1>
       {{{body}}}
     </div>
   </body>
