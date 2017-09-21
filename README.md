@@ -1,6 +1,4 @@
-# Boilerplate: Knex.js
-
-Phase 1 boilerplate project with:
+# Phase 1 group pproject with:
 
  - Express
  - Knex
@@ -10,15 +8,22 @@ Phase 1 boilerplate project with:
  - AVA
  - Node Inspector
  - nodemon
-
+ 
+## As a user U want:
+- create posts/tweets about weather in different locations and view posts created by others
 
 ## Install
 
 ```
+git clone https://github.com/anna-podhajska/tweather
+cd tweather
 npm install
 npm run knex migrate:latest
 npm run knex seed:run
 npm run dev
+visit the app at [http://localhost:3000](http://localhost:3000)
 ```
 
-Be sure to check out the other npm scripts too.
+### [Deployment on Heroku] (https://tweather-project.herokuapp.com)
+
+
