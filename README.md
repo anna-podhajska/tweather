@@ -1,4 +1,4 @@
-# Phase 1 group pproject with:
+# Phase 1 bootcamp group project with:
 
  - Express
  - Knex
@@ -24,6 +24,9 @@ npm run dev
 visit the app at [http://localhost:3000](http://localhost:3000)
 ```
 
-### [Deployment on Heroku] (https://tweather-project.herokuapp.com)
+### Deployment on Heroku:
+https://tweather-project.herokuapp.com
 
+### Authors
+Ania, Usha, Anthony, Annelise
 
