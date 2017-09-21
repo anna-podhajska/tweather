@@ -1,4 +1,4 @@
-# Phase 1 bootcamp group project with:
+## Phase 1 bootcamp group project with:
 
  - Express
  - Knex
