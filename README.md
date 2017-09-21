@@ -24,7 +24,7 @@ npm run dev
 visit the app at [http://localhost:3000](http://localhost:3000)
 ```
 
-### Deployment on Heroku:
+### last deployed verstion on Heroku:
 https://tweather-project.herokuapp.com
 
 ### Authors
