@@ -8,7 +8,7 @@
  - AVA
  - Node Inspector
  - nodemon
- 
+
 ## As a user U want:
 - create posts/tweets about weather in different locations and view posts created by others
 
@@ -28,5 +28,7 @@ visit the app at [http://localhost:3000](http://localhost:3000)
 https://tweather-project.herokuapp.com
 
 ### Authors
-Ania, Usha, Anthony, Annelise
-
+Ania - scrum master, backend, logo
+Usha - technical lead, frontend, style,
+Anthony - facilitator, backend,
+Annelise - stakeholder, joined group later
